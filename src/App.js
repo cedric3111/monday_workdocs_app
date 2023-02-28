@@ -11,8 +11,6 @@ const monday = mondaySdk()
 
 //This is a test as amending the pull request.
 // TODO Adding more stuff
-// Add Integration to ChatGPT here
-//Changesvcxvxcvxcvddsfsdfdsf fdsfds
 
 const App = () => {
   async function capitalizeText() {
