@@ -10,7 +10,6 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //This is a test as amending the pull request.
-// TODO Adding more stuff
 
 const App = () => {
   async function capitalizeText() {
@@ -22,7 +21,6 @@ const App = () => {
       const currentBlock =
         currentContext.data.focusedBlocks[0].content.deltaFormat
       const range = currentContext.data.range
-      alert(range)
       const newBlock = []
       currentBlock.forEach(async (currentWord) => {
         let firstPart = currentWord.insert.substr(0, range.index)
