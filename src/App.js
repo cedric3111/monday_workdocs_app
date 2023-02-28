@@ -16,7 +16,6 @@ const App = () => {
     try {
       monday.execute("valueCreatedForUser")
 
-      alert("This is a warning message")
       // set context
       const currentContext = await monday.get("context")
       const currentBlock =
