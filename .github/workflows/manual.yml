@@ -1,6 +1,9 @@
 name: PR Title Validation
 
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+      - integration
 
 jobs:
   comment:
