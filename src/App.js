@@ -10,6 +10,7 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //Add Capitalise Selected Text
+//Add Lowerise Selected Text
 
 const App = () => {
   async function capitalizeText() {
