@@ -10,6 +10,7 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //This is a new warning message functionality
+//This is a new capatalise functionality
 
 const App = () => {
   async function capitalizeText() {
