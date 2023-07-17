@@ -1,11 +1,10 @@
 name: PR Title Validation
 
-on: [pull_request]
+on: [push]
 
 jobs:
   comment:
     runs-on: ubuntu-latest
-    if: (!startsWith(github.event.pull_request.title, 'PR - '))
     steps:
       - uses: actions/github-script@v5
         with:
