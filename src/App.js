@@ -10,6 +10,7 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //Add Capitalise Entire Sentence
+//Add new functionaty
 
 const App = () => {
   async function capitalizeText() {
