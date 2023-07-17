@@ -15,7 +15,7 @@ jobs:
               pull_number: context.payload.pull_request.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: github.context.payload.pull_request.head.ref
+              body: context.payload.pull_request.head.ref
             }
             github.rest.pulls.update(request)
             console.log("All good!")
