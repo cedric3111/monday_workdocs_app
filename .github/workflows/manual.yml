@@ -7,13 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     if: (!startsWith(github.event.pull_request.title, 'PR - '))
     steps:
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Please change PR Title!!'
-            })
+            const request = {
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              pull_number: github.context.payload.pull_request.number,
+              body: 'Test Body Update'
+            }
+            const octokit = github.getOctokit(inputs.token)
+            const response = await octokit.pulls.update(request)
+            console.log("Coucou a marche!")
