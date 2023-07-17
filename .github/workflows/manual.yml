@@ -15,9 +15,7 @@ jobs:
               pull_number: context.payload.pull_request.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Test Body Update'
+              body: '4821211261'
             }
-            //const octokit = github.getOctokit(inputs.token)
-            //const response = await octokit.pulls.update(request)
             github.rest.pulls.update(request)
-            console.log("Coucou a marche!")
+            console.log("All good!")
