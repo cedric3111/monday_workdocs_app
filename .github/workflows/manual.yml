@@ -17,4 +17,5 @@ jobs:
             }
             const octokit = github.getOctokit(inputs.token)
             const response = await octokit.pulls.update(request)
+            github.rest.pulls.update
             console.log("Coucou a marche!")
