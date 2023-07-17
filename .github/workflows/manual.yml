@@ -12,7 +12,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const request = {
-              pull_number: context.payload.pull_request.number,
+              pull_number: '23',
               body: 'Test Body Update'
             }
             //const octokit = github.getOctokit(inputs.token)
