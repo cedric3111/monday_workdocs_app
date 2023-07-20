@@ -12,6 +12,7 @@ const monday = mondaySdk()
 //Add Capitalise Selected Text
 //Add Lowerise Selected Text
 //Add Lowerise Entire Sentence
+//Add Lowerise Entire Sentence
 
 const App = () => {
   async function capitalizeText() {
