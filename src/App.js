@@ -9,6 +9,8 @@ import { Button } from "monday-ui-react-core"
 // Usage of mondaySDK example, for more information visit here: https://developer.monday.com/apps/docs/introduction-to-the-sdk/
 const monday = mondaySdk()
 
+//Add-exception-management
+
 const App = () => {
   async function capitalizeText() {
     try {
