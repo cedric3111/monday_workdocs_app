@@ -17,6 +17,7 @@ const monday = mondaySdk()
 //Add-Lowerise-Selected commit 1
 //Add-Lowerise-Selected commit 2
 //Add-Lowerise-Selected commit 3
+//Add-Lowerise-Selected commit 4
 
 const App = () => {
   async function capitalizeText() {
