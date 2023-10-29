@@ -10,6 +10,7 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //Add-exception-management
+//Add-Warning-Message
 
 const App = () => {
   async function capitalizeText() {
