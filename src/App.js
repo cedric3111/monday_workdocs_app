@@ -13,6 +13,7 @@ const monday = mondaySdk()
 //Add-Warning-Message
 //Add-Lowerise-Entire-Sentence
 //Add-Lowerise-Entire-Sentence
+//Add-Lowerise-Selected
 
 const App = () => {
   async function capitalizeText() {
