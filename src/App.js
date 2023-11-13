@@ -10,6 +10,7 @@ import { Button } from "monday-ui-react-core"
 const monday = mondaySdk()
 
 //Code Cleanup
+//Add SFTP Connector
 
 const App = () => {
   async function capitalizeText() {
